@@ -15,7 +15,9 @@ async function  testInsertTwoDeleteFirst(){
     await tdoPg.insertTwoDeleteFirst("Task T1","Task T2");
 }
 
-
+/**
+ *  Uncomment the test to be run, and comment all others.
+ */
 async function runTests(){
     // console.log("todosTest testInsertAndDelete()")
     // await testInsertAndDelete();

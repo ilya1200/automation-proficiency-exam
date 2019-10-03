@@ -76,7 +76,6 @@ class TodosPage {
             const isLastTodoFound = await this.infraDriver.isElementExists(newTodoLocator.locatorType, newTodoLocator.locator);
             if (isLastTodoFound) {
                 const lastTodoText = await this.infraDriver.getTextFromElement(newTodoLocator.locatorType, newTodoLocator.locator);
-                console.log(" lastTodoText: " + lastTodoText)
                 if (lastTodoText !== todoText) {
                     console.log("The div was deleted")
                 }else{
