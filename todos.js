@@ -91,7 +91,7 @@ class TodosPage {
 
 
         //Close Page
-        this.closeTodosPage();
+        await this.closeTodosPage();
     }
 
     async insertAndComplete(todoText) {
@@ -134,7 +134,7 @@ class TodosPage {
                     console.log("the new div was checked");
 
                     //Close Page
-                    this.closeTodosPage();
+                    await this.closeTodosPage();
                     return;
                 }
             }
@@ -146,7 +146,7 @@ class TodosPage {
 
 
         //Close Page
-        this.closeTodosPage();
+        await this.closeTodosPage();
 
     }
 
@@ -196,7 +196,7 @@ class TodosPage {
                 if(firstTodoText !== todoText1){
                     console.log("the first div was deleted")
                     //Close Page
-                    this.closeTodosPage();
+                    await this.closeTodosPage();
                     return;
                 }
             }
@@ -212,7 +212,7 @@ class TodosPage {
 
 
         //Close Page
-        this.closeTodosPage();
+        await this.closeTodosPage();
     }
 
     //Helpers
